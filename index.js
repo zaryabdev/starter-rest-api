@@ -75,7 +75,7 @@ app.get("/:col", async (req, res) => {
 });
 
 // Get a full listing 2
-app.get("/:col/list", async (req, res) => {
+app.get("/list/:col", async (req, res) => {
     const col = req.params.col;
     console.log(
         `list collection: ${col} with params: ${JSON.stringify(req.params)}`
